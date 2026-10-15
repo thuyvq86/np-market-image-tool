@@ -306,7 +306,7 @@ footer a{color:var(--muted)}
 let _remover=null;
 async function getRemover(){
   if(_remover) return _remover;
-  const m=await import('https://cdn.jsdelivr.net/npm/@imgly/background-removal@1.6.0/dist/index.mjs');
+  const m=await import('https://cdn.jsdelivr.net/npm/@imgly/background-removal@1.6.0/+esm');
   _remover=m.removeBackground; return _remover;
 }
 const $ = s => document.querySelector(s);
